@@ -94,7 +94,8 @@
     font-weight:700;
     color:#333;
     margin:0 0 35px;
-    font-size:21px
+    font-size:21px;
+    font-family: sans-serif !important;
 }
 #layout-swr .layout-o ul {
     padding:0;
@@ -707,10 +708,12 @@ body.selected-4a245e .bg-swr-el-pagination span.swiper-pagination-bullet-active 
 
 
 /* Font */
+.font-fsalbert,
 body.font-fsalbert {
     font-family: 'FSAlbert' !important;
 }
 
+.helveticaNeue,
 body.helveticaNeue {
     font-family: 'Helvetica Neue' !important;
 }

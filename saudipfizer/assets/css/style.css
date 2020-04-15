@@ -440,6 +440,10 @@ article .normal-text {
   font-size: 28px;
 }
 
+.body-heading {
+  display: none;
+}
+
 .site-name {
   color: #fff;
   font-size: 22px;
