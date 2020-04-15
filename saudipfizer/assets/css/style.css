@@ -425,6 +425,15 @@ article .normal-text {
   font-size: 28px;
 }
 
+.site-name {
+  color: #fff;
+  font-size: 22px;
+  margin: 0;
+  width: 0px;
+  height: 0;
+  opacity: 0;
+}
+
 @font-face {
   font-family: "FSAlbert";
   src: url("../fonts/fsalbert/regular/FSAlbert-Regular.eot");
