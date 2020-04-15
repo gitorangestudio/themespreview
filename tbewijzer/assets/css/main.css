@@ -1678,6 +1678,7 @@ _:-ms-fullscreen,
         padding-bottom: 6rem;
         font-size: 14px;
         line-height: 26px;
+        height: auto !important;
     }
     .wat-is-tbe .section-logo,
     .loop-ik-risico .section-logo {
@@ -1695,6 +1696,7 @@ _:-ms-fullscreen,
         padding-bottom: 3rem;
         font-size: 14px;
         line-height: 26px;
+        height: auto !important;
     }
     .doe-maar-lekker-hoger {
         background-position: right center;
