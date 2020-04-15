@@ -1,0 +1,113 @@
+@import './variables';
+
+.breadcrumbs-section {
+    ol {
+        margin: 0px;
+        padding: 0px;
+        li {
+            display: inline-block;
+            margin-right: 6px;
+            a {
+                color: $font_gray;
+                font-size: 12px;
+                font-weight: bold;
+            }
+            &.label {
+                color: $font_gray;
+                font-size: 11px;
+                font-style: italic;
+                text-transform: uppercase;
+                margin-right: 10px;
+            }
+            &.current {
+                color: $font_gray;
+                font-size: 12px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+article {
+    padding-top: 15px;
+    .title {
+        color: $blue;
+    }
+    img {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .normal-text {
+        font-size: 15px;
+        color: $font_gray;
+    }
+}
+
+.about {
+    .title {
+        color: $orange;
+    }
+}
+
+.terms {
+    .title {
+        color: $green;
+    }
+    .term-content {
+        list-style-type: decimal;
+        li {
+            p {
+                margin-bottom: 8px;
+                .label {
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin-right: 6px;
+                    color: $font_gray;
+                }
+                .data {
+                    color: $font_gray;
+                    a {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.privacy {
+    .title {
+        color: $purple;
+    } 
+    .content {
+        .policy-content {
+            li {
+                p {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        a {
+            color: $blue;
+        }
+        .sub-pargraph {
+            display: block;
+            width: 100%;
+            font-size: 15px;
+            color: $font_gray;
+        }
+    }
+}
+
+.navbar-toggler {
+    border: 1px solid $white;
+    &:focus {
+        outline: none !important;
+    }
+    .material-icons {
+        color: $white;
+        font-size: 28px;
+    }
+}

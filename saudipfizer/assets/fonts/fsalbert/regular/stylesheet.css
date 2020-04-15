@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'FSAlbert';
+    src: url('FSAlbert-Regular.eot');
+    src: url('FSAlbert-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FSAlbert-Regular.woff2') format('woff2'),
+        url('FSAlbert-Regular.woff') format('woff'),
+        url('FSAlbert-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,95 @@
+// Vars
+$blue: #0093D0;
+$light_blue: #00aeef;
+$orange: #F8971D;
+$green: #7dba00;
+$purple: #4A245E;
+$red: #CC292B;
+$dark_blue: #002596;
+$font_gray: #5b5b5b;
+$light_gray: #b6b6b6;
+$white: #ffffff;
+
+// Import fonts
+@font-face {
+    font-family: 'FSAlbert';
+    src: url('../fonts/fsalbert/regular/FSAlbert-Regular.eot');
+    src: url('../fonts/fsalbert/regular/FSAlbert-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fsalbert/regular/FSAlbert-Regular.woff2') format('woff2'),
+        url('../fonts/fsalbert/regular/FSAlbert-Regular.woff') format('woff'),
+        url('../fonts/fsalbert/regular/FSAlbert-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSAlbert-bold';
+    src: url('../fonts/fsalbert/bold/FSAlbert-Bold.eot');
+    src: url('../fonts/fsalbert/bold/FSAlbert-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/fsalbert/bold/FSAlbert-Bold.woff2') format('woff2'),
+        url('../fonts/fsalbert/bold/FSAlbert-Bold.woff') format('woff'),
+        url('../fonts/fsalbert/bold/FSAlbert-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/helvetica/HelveticaNeue-Light.eot");
+    src: url("../fonts/helvetica/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Light.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Light.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/helvetica/HelveticaNeue-Roman.eot");
+    src: url("../fonts/helvetica/HelveticaNeue-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Roman.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Roman.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Roman.svg#HelveticaNeue-Roman") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url("../fonts/helvetica/HelveticaNeue-Bold.eot");
+    src: url("../fonts/helvetica/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: 'FSAlbert'; 
+    background: #f0f0f0;
+}
+
+body.font-fsalbert {
+    font-family: 'FSAlbert' !important; 
+}
+
+body.font-helveticaNeue {
+    font-family: "Helvetica Neue"  !important;
+}
+
+// h1, h2, h3, h4, h5 {
+//     font-family: 'FSAlbert-bold';
+// }
+
+// Transitions @mixin
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}

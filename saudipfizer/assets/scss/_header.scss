@@ -1,0 +1,147 @@
+@import './variables';
+
+// Main Header
+#header {
+    margin-bottom: 20px;
+    min-height: 110px;
+    padding-top: 15px;
+    .bg-shadow {
+        display: block;
+        width: 100%;
+        height: 110px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+    .header-content {
+        position: relative;
+        .navbar {
+            .navbar-brand {
+                margin-right: 72px;
+            }
+            ul.navbar-nav {
+                li {
+                    padding: 0px 16px;
+                    a {
+                        color: $white;
+                        text-transform: uppercase;
+                        font-size: 15px;
+                        text-decoration: none;
+                        position: relative;
+                        padding-left: 4px;
+                        padding-right: 4px;
+                        @include transition(all .5s);             
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            background-color: $white;
+                            position: absolute;
+                            bottom: 4px;
+                            left: 0px;
+                            opacity: 0;
+                            @include transition(all .5s);
+                        }
+                        &:hover {
+                            text-decoration: none;
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &.active {
+                        a {
+                            &:after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                    &:first-child {
+                        a:after {
+                            background-color: $blue;
+                        }
+                    }
+                    &:nth-child(2) {
+                        a:after {
+                            background-color: $orange;
+                        }
+                    }
+                    &:nth-child(3) {
+                        a:after {
+                            background-color: $green;
+                        }
+                    }
+                    &:nth-child(4) {
+                        a:after {
+                            background-color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+    }    
+}
+
+// Front Page
+.front {
+    #header {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        max-height: 500px;
+        background-image: url('./../images/superbugs-banner.jpg');
+        overflow: visible;
+        position: relative;
+        margin-bottom: 30px;
+        .banner-content-section {
+            display: block;
+            height: calc(100% - 75px);
+            position: relative;
+            .banner-text {
+                position: absolute;
+                bottom: 10%;
+                right: 0px;
+                display: block;
+                float: right;
+                width: 440px;
+                a {
+                    font-size: 38px;
+                    overflow: hidden;
+                    line-height: 45px;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: left;
+                    font-weight: bold;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+// About Page
+.about {
+    #header {
+        background-color: $orange;
+    }
+}
+
+// Terms Page
+.terms {
+    #header {
+        background-color: $green;
+    }
+}
+
+// Terms Page
+.privacy {
+    #header {
+        background-color: $purple;
+    }
+}
