@@ -30,14 +30,13 @@
 
     <!-- Import CSS files from assets -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/apps/bootstrap/css/bootstrap.min.css" async>
-    <link rel="stylesheet" href="assets/apps/carousel/assets/owl.carousel.min.css" async>
-    <link rel="stylesheet" href="assets/apps/scrollbar/jquery.mCustomScrollbar.min.css" async>
-    <link rel="stylesheet" href="assets/css/main.css" async>
-    <link rel="stylesheet" href="assets/css/switcher.css" async>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" async>
-    <link rel="stylesheet" href="assets/css/material-components-web.min.css" async>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" async>
+    <link rel="stylesheet" href="assets/apps/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/apps/scrollbar/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/switcher.css">
+    <link rel="stylesheet" href="assets/apps/swiper/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/material-components-web.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap">
 </head>
 
 <body>
@@ -446,14 +445,12 @@
 
     <script src="assets/apps/default/jquery-3.3.1.min.js"></script>
     <script src="assets/apps/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script defer src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-    <script defer src="assets/apps/default/jquery.zoom.min.js"></script>
-    <script defer src="assets/apps/carousel/owl.carousel.min.js"></script>
-    <script defer src="assets/apps/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script defer src="assets/apps/default/main.js?v1"></script>
-    <script defer src="assets/apps/default/material-components-web.min.js"></script>
-    <script defer src="assets/apps/default/switcher.js"></script>
+    <script src="assets/apps/swiper/swiper.min.js"></script>
+    <script src="assets/apps/default/jquery.min.js"></script>
+    <script src="assets/apps/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/apps/default/main.js?v1"></script>
+    <script src="assets/apps/default/material-components-web.min.js"></script>
+    <script src="assets/apps/default/switcher.js"></script>
 
     <script>
         var mySwiper = new Swiper('.swiper-container', {
@@ -484,17 +481,6 @@
             });
             $(".map").click(function() {
                 $(".map-popup").addClass("open");
-            });
-            $('.zoom-holder').zoom({
-                on: 'click',
-                magnify: 2
-            });
-            $(".map-popup .zoom-holder .zoom-img-base").click(function() {
-                $('.zoom-closer').addClass("active");
-                console.log("zoom activated");
-            });
-            $(".map-close-btn, .map-close-btn-holder").click(function() {
-                $(".map-popup").removeClass("open");
             });
         });
     </script>

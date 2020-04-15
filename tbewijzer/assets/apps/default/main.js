@@ -29,25 +29,6 @@
 
 
     /*------------------------------
-        @HEADER-CAROUSEL
-    -------------------------------*/
-    if ($(".owl-carousel").length > 0) {
-        $(".owl-carousel").owlCarousel({
-            loop: false,
-            margin: 0,
-            nav: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
-            }
-        });
-    }
-
-    /*------------------------------
         @CUSTOM SCROLLBAR
     -------------------------------*/
     if ($(".max-height-content").length > 0) {
