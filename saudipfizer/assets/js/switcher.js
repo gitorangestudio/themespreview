@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
     // Aplly Background Color On Theme
     $('#layout-swr .block-switcher.Background-color-swr button').on('click', function(){
-        var $selectedColor = $(this).attr('hex');
+        var $selectedColor = $(this).attr('data-value');
         $(this).parents('.Background-color-swr').find('button.active').removeClass('active');
         $(this).addClass('active');
         $('body').removeClassRegEx('theme-');
@@ -17,7 +17,7 @@ $( document ).ready(function() {
 
     // Aplly Background Color On Components
     $('#layout-swr .block-switcher.components-color-swr button').on('click', function(){
-        var $selectedColor = $(this).attr('hex');
+        var $selectedColor = $(this).attr('data-value');
         $(this).parents('.components-color-swr').find('button.active').removeClass('active');
         $(this).addClass('active');
         $('body').removeClassRegEx('selected-');
@@ -27,12 +27,11 @@ $( document ).ready(function() {
 
     // Aplly font On Theme
     $('#layout-swr .block-switcher.fonts-family-swr button').on('click', function(){
-        var $selectedFont = $(this).attr('font');
+        var $selectedFont = $(this).attr('data-font');
         $(this).parents('.fonts-family-swr').find('button.active').removeClass('active');
         $(this).addClass('active');
         $('body').removeClassRegEx('font-');
         $('body').addClass('font-' + $selectedFont);
-        // $('.bg-swr-el-com').css('background-color', '#' + $selectedFont);
     });
 
     // remove class regex expression function

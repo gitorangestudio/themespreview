@@ -225,6 +225,9 @@
 }
 
 #layout-swr .icon-cog .material-icons {
+    animation: gearicon 2s infinite;
+    position: relative;
+    top: 3px;
     -webkit-animation: gearicon 2s infinite;
     animation: gearicon 2s  infinite;
 }

@@ -13,13 +13,16 @@ $( document ).ready(function() {
   // Sticky Navbar (Add class on scroll)
   var yourNavigation = $("#navbarSupportedContent");
   stickyDiv = "sticky";
-  yourHeader = $('#header').height();
+  heightHeader = $('#header').height();
+  header = $('#header');
 
   $(window).scroll(function() {
-    if ($(this).scrollTop() > yourHeader) {
+    if ($(this).scrollTop() > heightHeader) {
       yourNavigation.addClass(stickyDiv);
+      header.addClass(stickyDiv);
     } else {
       yourNavigation.removeClass(stickyDiv);
+      header.removeClass(stickyDiv);
     }
   });
 
