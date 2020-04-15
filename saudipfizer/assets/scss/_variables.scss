@@ -20,6 +20,7 @@ $white: #ffffff;
         url('../fonts/fsalbert/regular/FSAlbert-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -31,6 +32,7 @@ $white: #ffffff;
         url('../fonts/fsalbert/bold/FSAlbert-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -39,6 +41,7 @@ $white: #ffffff;
     src: url("../fonts/helvetica/HelveticaNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Light.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Light.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Light.svg#HelveticaNeue-Light") format("svg");
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -47,6 +50,7 @@ $white: #ffffff;
     src: url("../fonts/helvetica/HelveticaNeue-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Roman.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Roman.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Roman.svg#HelveticaNeue-Roman") format("svg");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -55,6 +59,7 @@ $white: #ffffff;
     src: url("../fonts/helvetica/HelveticaNeue-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/helvetica/HelveticaNeue-Bold.woff") format("woff"), url("../fonts/helvetica/HelveticaNeue-Bold.ttf") format("truetype"), url("../fonts/helvetica/HelveticaNeue-Bold.svg#HelveticaNeue-Bold") format("svg");
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 body {
