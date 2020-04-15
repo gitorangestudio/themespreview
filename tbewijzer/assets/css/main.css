@@ -807,7 +807,6 @@ body.subpage .page-header {
     position: relative;
     z-index: 1;
     height: auto;
-    max-height: 1200px;
     background-color: #f3bc00;
     padding-bottom: 3rem;
 }
