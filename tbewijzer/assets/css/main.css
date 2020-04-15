@@ -1477,9 +1477,6 @@ _:-ms-fullscreen,
     height: auto;
 }
 
-.map {
-    cursor: pointer;
-}
 
 .map-popup {
     position: fixed;
