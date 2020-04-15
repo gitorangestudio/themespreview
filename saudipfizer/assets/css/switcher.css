@@ -8,7 +8,7 @@
     display:table;
     margin-top:32px
 }
-#layout-swr .block-switcher h3 {
+#layout-swr .block-switcher h4 {
     text-align:left;
     margin:0;
     font-family:open sans,sans-serif;
@@ -90,7 +90,7 @@
 #layout-swr .box-layout.open-swr {
     margin-left: 0px;
 }
-#layout-swr.box-layout h2 {
+#layout-swr .box-layout h3 {
     font-weight:700;
     color:#333;
     margin:0 0 35px;
