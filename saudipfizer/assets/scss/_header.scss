@@ -20,62 +20,79 @@
         .navbar {
             .navbar-brand {
                 margin-right: 72px;
+                img {
+                    width: 70px;
+                }
             }
             ul.navbar-nav {
+                margin-top: 6px;
                 li {
                     padding: 0px 16px;
-                    a {
+                    border-bottom: 1px solid transparent;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    &.show {
+                        a:before {
+                            opacity: 1;
+                        }
+                    }
+                    &:hover {
+                        background-color: rgba(0, 0, 0, .8) !important;
+                        border-bottom: 1px solid #000000;
+                    }
+                    a.nav-link {
                         color: $white;
                         text-transform: uppercase;
                         font-size: 15px;
                         text-decoration: none;
                         position: relative;
-                        padding-left: 4px;
-                        padding-right: 4px;
-                        @include transition(all .5s);             
+                        padding-left: 0px;
+                        padding-right: 0px;  
                         &:after {
+                            display: none;
+                        }          
+                        &:before {
                             content: '';
                             display: block;
                             width: 100%;
                             height: 3px;
                             background-color: $white;
                             position: absolute;
-                            bottom: 4px;
+                            bottom: 6px;
                             left: 0px;
                             opacity: 0;
-                            @include transition(all .5s);
                         }
                         &:hover {
                             text-decoration: none;
-                            &:after {
+                            &:before {
                                 opacity: 1;
                             }
                         }
                     }
                     &.active {
                         a {
-                            &:after {
+                            &:before {
                                 opacity: 1;
                             }
                         }
                     }
                     &:first-child {
-                        a:after {
+                        a:before {
                             background-color: $blue;
                         }
                     }
                     &:nth-child(2) {
-                        a:after {
+                        a:before {
                             background-color: $orange;
                         }
                     }
                     &:nth-child(3) {
-                        a:after {
+                        a:before {
                             background-color: $green;
                         }
                     }
                     &:nth-child(4) {
-                        a:after {
+                        a:before {
                             background-color: $purple;
                         }
                     }
@@ -83,6 +100,70 @@
             }
         }
     }    
+}
+
+// Color blue header
+.color-blue {
+    #header {
+        background-color: $blue;
+    }
+    .card {
+        .card-title {
+            color: $blue !important;
+        }
+        .card-cta {
+            color: $blue !important;
+            border-color: $blue !important;
+        }
+    }
+}
+
+// Color orange Header
+.color-orange {
+    #header {
+        background-color: $orange;
+    }
+    .card {
+        .card-title {
+            color: $orange !important;
+        }
+        .card-cta {
+            color: $orange !important;
+            border-color: $orange !important;
+        }
+    }
+}
+
+// Color green Header
+.color-green {
+    #header {
+        background-color: $green;
+    }
+    .card {
+        .card-title {
+            color: $green !important;
+        }
+        .card-cta {
+            color: $green !important;
+            border-color: $green !important;
+        }
+    }
+}
+
+// Color purple Header
+.color-purple {
+    #header {
+        background-color: $purple;
+    }
+    .card {
+        .card-title {
+            color: $purple !important;
+        }
+        .card-cta {
+            color: $purple !important;
+            border-color: $purple !important;
+        }
+    }
 }
 
 // Front Page
@@ -125,23 +206,7 @@
     } 
 }
 
-// About Page
-.about {
-    #header {
-        background-color: $orange;
-    }
-}
-
-// Terms Page
-.terms {
-    #header {
-        background-color: $green;
-    }
-}
-
-// Terms Page
-.privacy {
-    #header {
-        background-color: $purple;
-    }
+// Mega Menu
+li.nav-item.dropdown.has-mega-menu {
+    position: static;
 }

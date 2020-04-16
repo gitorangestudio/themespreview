@@ -1,6 +1,7 @@
 @import './variables';
 
 .breadcrumbs-section {
+    margin-bottom: 16px;
     ol {
         margin: 0px;
         padding: 0px;
@@ -29,7 +30,6 @@
 }
 
 article {
-    padding-top: 15px;
     .title {
         color: $blue;
     }
@@ -45,15 +45,31 @@ article {
     }
 }
 
+.title {
+    text-transform: uppercase;
+}
+
 .about {
     .title {
         color: $orange;
     }
 }
 
-.terms {
+.products {
     .title {
         color: $green;
+    }
+}
+
+.responsibility {
+    .title {
+        color: $purple;
+    }
+}
+
+.terms {
+    .title {
+        color: $blue;
     }
     .term-content {
         list-style-type: decimal;
@@ -79,7 +95,7 @@ article {
 
 .privacy {
     .title {
-        color: $purple;
+        color: $blue;
     } 
     .content {
         .policy-content {
@@ -88,9 +104,6 @@ article {
                     margin-bottom: 2px;
                 }
             }
-        }
-        a {
-            color: $blue;
         }
         .sub-pargraph {
             display: block;

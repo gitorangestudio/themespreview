@@ -8,6 +8,24 @@ $( document ).ready(function() {
           $(this).parents('li').addClass('active');
         }
       });
+
+    // Go to href when click event
+    $('#navbarSupportedContent ul li a.dropdown-toggle').on('click', function(){
+      var $href = $(this).attr('href');
+      window.location = $href;
+    });
+
+    // when you hover a toggle show its dropdown menu
+    $(".navbar .dropdown-toggle").hover(function () {
+      $(this).parent().toggleClass("show");
+      $(this).parent().find(".dropdown-menu").toggleClass("show"); 
+    });
+
+      // hide the menu when the mouse leaves the dropdown
+    $( ".navbar .dropdown-menu" ).mouseleave(function() {
+      $(this).removeClass("show");  
+    });
+     
   });
 
   // Sticky Navbar (Add class on scroll)

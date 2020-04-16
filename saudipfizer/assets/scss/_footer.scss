@@ -1,7 +1,7 @@
 #footer {
     .content-section {
         border-top: 1px solid #ccc;
-        padding: 16px 0px;
+        padding: 16px;
         .left-content {
             .footer-menu {
                 margin: 0px;
@@ -65,6 +65,15 @@
             .copyright {
                 color: #b6b6b6;
             }
+        }
+    }
+}
+
+.front {
+    #footer {
+        .content-section {
+            padding-left: 0px;
+            padding-right: 0px;
         }
     }
 }

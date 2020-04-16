@@ -1449,13 +1449,11 @@ _:-ms-fullscreen,
 
 .slide-videos .video .close-btn span {
     font-size: 16px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border-radius: 100px;
-  border: 2px solid #FFF;*/
     padding: 10px;
     float: right;
     color: #FFF;
