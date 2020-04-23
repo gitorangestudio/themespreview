@@ -1787,7 +1787,7 @@ _:-ms-fullscreen,
     .page-header .base-content .btn-pos_abs {
         position: absolute;
         right: auto;
-        font-size: 18px;
+        font-size: 15px;
         padding: 1rem;
         max-width: 60%;
         left: 20%;
