@@ -739,3 +739,19 @@ body.helveticaNeue {
         transform: rotate(360deg);
     }
 }
+
+#copyrights {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    z-index: 9999;
+    height: 44px;
+}   
+.page-footer {
+    margin-bottom: 44px;
+}
