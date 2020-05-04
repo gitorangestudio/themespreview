@@ -1,0 +1,324 @@
+
+html,body{
+  scroll-behavior: smooth;
+}
+
+*{
+  
+  @include prefixer(box-sizing, border-box, webkit moz o);
+
+   font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif,'Montserrat',tahoma;
+
+   img{
+     max-width: 100%;
+   }
+}
+// start index.html*/
+  .front{
+    padding-top: 0;
+  }
+    .second-heading{
+      font-family: Helvetica,Arial,sans-serif;
+        color: $greenColor;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-bottom: 30px;
+        word-break: break-word; 
+        text-shadow: 3px 3px 5px rgba(0,0,0,.1);
+        text-transform: uppercase;
+    }
+  
+    .third-heading{
+        color: $greenColor;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+    .fifth-heading,span{
+        color: $greenColor;
+        font-weight: 400;
+        font-size: 14px;
+
+    }
+    .para-link{
+          color: $greenColor;
+          text-decoration: underline;
+
+          &:hover{
+            color: $redColor;
+            text-decoration: none;
+           }
+    }
+  p{
+    font-size: 15px;
+  }
+
+    .questions {
+      .section{
+        margin-left: auto;
+        max-width: calc(100% - 200px);
+
+      .question-item{
+        
+        .question-title{
+          margin-top: 50px;
+        }
+            
+          .question-para{
+                font-size: 16px;
+                line-height: 23px;
+                max-width: 500px;
+              }
+       }
+      }
+
+  }
+     // start cover-image
+    .cover{
+
+      .cover-image{
+        position: relative;
+
+        overflow: hidden;
+
+              &::before{
+                position: absolute;
+                display: block;
+                left:0;
+                content:'';
+                  top:0;
+                  width: 100%;
+                  height: 20%;
+                  z-index: 2;
+                  background: url(../../assets/images/assets/paper-top.png) no-repeat ;
+                  background-size: cover;
+              }
+
+              &::after{
+                  position: absolute;
+                  display: block;
+                  left:0;
+                  content:'';
+                  bottom: 0;
+                  width: 100%;
+                  height: 35%;
+                  z-index: 2;
+                  background: url(../../assets/images/assets/paper-bottom.png) no-repeat ;
+                  background-size:cover;
+
+                }
+                img{
+                  transform: scale(1.5);
+                }
+            }
+          }
+// End of cover-image
+
+// start cover-para
+  .cover-para{
+        background-color: $greenColor;
+        padding: 150px 200px;
+        position: relative;
+
+        &::before{
+            position: absolute;
+            display: block;
+            left:0;
+          content:'';
+              top:0;
+              width: 100%;
+              height: 100%;
+              z-index: 2;
+              background: url(../../assets/images/assets/paper-top.png) no-repeat ;
+           }
+
+        &::after{
+              position: absolute;
+              display: block;
+              left:0;
+              content:'';
+              top:70%;
+              width: 100%;
+              height: 100%;
+              z-index: 2;
+              background: url(../../assets/images/assets/paper-bottom.png) no-repeat ;
+           }            
+
+        h3{
+          color: #fff;
+          line-height: 1.5;
+          padding: 0px 75px;
+          text-align: center;
+          font-size: 22px;
+          
+        }
+
+  }
+//  End of cover-para
+
+// start sections
+  .sections{
+      padding: 50px 0;
+        
+      .section{
+          margin-left: auto;
+          max-width: calc(100% - 220px);
+
+        .item{
+            margin-bottom: 50px;
+
+          .item-image{
+              margin-right: 10px;
+            
+
+          }
+
+        }
+        .col-md-8{
+          padding: 0;
+          max-width: 500px;
+          margin-left: -10px;
+          p{
+            font-size: 1rem;
+            font-family:Source Sans Pro,Helvetica,Arial,sans-serif;
+          }
+        }
+        
+      }
+  }
+  .basic{
+    .space-top{
+      max-width: calc(100% - 177px);
+    margin-left: auto;
+    padding-top: 130px;
+    }
+  }
+// End of sections
+
+/*sart zeckenundwissen page*/
+
+      /*start basic part */
+          .basic{
+            .part{
+                max-width: calc(100% - 200px);
+                margin-left: auto;
+                padding:15px 0 0 0;
+                .row{
+                  margin-bottom: 20px;
+                .col-lg-4,.col-lg-8{
+                  padding: 0;
+                }
+                .part-six{
+                  .middle{
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+
+          }
+      /*End of basic part */
+
+/*End zeckenundwissen page*/
+
+/*Start zeckenundfsme.html page*/
+.areas{
+  padding-top: 150px;
+}
+    .para
+      {
+        font-size: 16px;
+        font-family: Source Sans Pro,Helvetica,Arial,sans-serif;
+      }
+/*End of zeckenundfsme.html page*/
+
+
+
+/*Start of fsmeundwissen.html page*/
+  .questions-answer{
+      padding: 50px 0 50px 55px;
+          .q-answer{
+            padding: 0 0 0 170px;
+          }
+  }
+
+/*End of fsmeundwissen.html page*/
+
+/*Start fsmeundimpfen.html page*/
+  .part
+    {
+      max-width: calc(100% - 180px);
+    }
+/*
+**** End of fsmeundimpfen.html page
+*/
+
+
+/*
+**** Start imprint.html page
+*/
+
+    .info{
+      padding-top: 100px;
+          ul{
+            list-style: none;
+            li{
+
+              &::before {
+              content: "\2022"; 
+              color: $redColor;
+              font-weight: bold;
+              display: inline-block; 
+              width: 1em;
+              margin-left: -1em;
+             }
+           }
+         }
+    }
+.multi {
+
+    a{
+      color: $greenColor;
+      text-decoration: underline;
+
+      &:hover{
+        color: $redColor;
+        text-decoration: none;
+      }
+  }
+}
+  .mit{
+    position: relative;
+    padding: 100px 0;
+    text-align: right;
+    .find{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+        
+      img{
+        height: 65px;
+      }
+      a{
+        color:$greenColor;
+        text-decoration: underline;
+        @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+        
+          &:hover{
+            color: $redColor;
+            text-decoration: none;
+          }
+      }
+
+    }
+
+  }
+
+/*
+**** End of imprint.html page
+*/
+
+
+ 
+
+

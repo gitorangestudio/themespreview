@@ -1,0 +1,130 @@
+footer {
+  width: 100%;
+  min-height: 105px;
+  background-color: #0082ca;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  .footer_company{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -81px;
+    .company_address{
+      position: relative;
+      right: 122px;
+      p {
+        color: #f1f1f1;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+  }
+  .footer_link{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .footer_links{
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      li{
+        a {
+          font-size: 14px;
+          color: #ffffff;
+          text-decoration: none;
+          padding: 1rem 0.5rem 0.4rem;
+          -webkit-transition: color 0.3s ease-out;
+          transition: color 0.3s ease-out;
+          position: relative;
+          &:after {
+            content: '';
+            width: 90%;
+            height: 2px;
+            background-color: #de2c2b;
+            position: absolute;
+            bottom: 0;
+            left: 8%;
+            -webkit-transform: scaleX(0);
+            transform:scaleX(0);
+            -webkit-transform-origin: left;
+            transform-origin: left;
+            transition: transform 0.5s ease-in-out;
+          }
+          &:hover{
+            &:after{
+              -webkit-transform: scaleX(1);
+              transform:scaleX(1);
+              -webkit-transform-origin: left;
+              transform-origin: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .scroll_up{
+    position: absolute;
+    top: -33px;
+    right: 13%;
+    padding: 5px;
+    background: #0082ca;
+    z-index: 1;
+    cursor: pointer;
+    &:before{
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 32%;
+      height: 100%;
+      background-color: #de2c2b;
+      z-index: -1;
+      transition: width 0.5s ease-in-out;
+    }
+    &:hover{
+      &:before{
+        width: 100%;
+      }
+    }
+    .title{
+      color: #fff;
+      font-size: 14px;
+      margin-left: 13px;
+    }
+    img{
+      transform: rotate(-88deg);
+      margin-right: 16px;
+      margin-left: 10px;
+    }
+  }
+}

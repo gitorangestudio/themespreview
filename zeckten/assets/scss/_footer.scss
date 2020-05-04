@@ -1,0 +1,57 @@
+#footer{
+    background-color: $greenColor;
+    padding: 50px 0 ;
+    margin-top: 50px;
+    position: relative;
+
+        .content-section{
+                .left-content{
+                    .image-one{
+                        img{
+                            background-color: $greenColor;
+
+                        }
+                    }
+
+                    .image-two{
+                        margin-top: 30px;
+                        img{
+                            background-color: $greenColor;
+
+                        }
+                            }
+                }
+
+                .middle-content{
+                    position: absolute;
+                    left: 20%;
+                    bottom:85px;
+                }
+
+                .right-content{
+                    position: relative;
+                    ul{
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        li{
+                            font-size: 13px;
+                            line-height: 2rem;
+
+                            a{
+                                color: #fff;
+
+                                &:hover{
+                                    text-decoration: none;
+                                    color: rgba(#fff,.4);
+                                    @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+        }
+
+}

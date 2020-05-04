@@ -1,0 +1,414 @@
+@import './responsive';
+/* Start Header in front page*/
+    #header{
+        background: url('../../assets/images/front/intro.jpg')center center no-repeat ;
+        position: relative;
+        background-size: cover;
+        width: 100%;
+        min-height: 121vh;
+
+
+        .nav{
+            position: fixed;
+            top: 15px;
+            left: 50%;
+            width:86%;
+            transform: translateX(-50%);
+            border:1px solid #fff;
+            background-color: #eee;
+            border-radius: 12px;
+            padding: 0 15px;
+            background-color: $greyColor;
+            z-index:2; 
+            @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+            @include prefixer(box-shadow, 0 5px 6px rgba(0,0,0,.2) ,webkit moz o );
+
+    
+            &.navbar-scroll{
+                width: 100%;
+                border-radius: 0;
+                top: 0;
+                position: fixed;
+                z-index: 3;
+                @include prefixer(transition, all 1s ease-in-out,webkit moz o );
+
+                }
+                .col-md-2{
+                    padding: 0;
+                      .logo{
+                            position: absolute;
+                            top: -35%;
+                            left: 0x;
+                            }
+                }
+
+              .middle{
+                      text-align: center;
+                ul{
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+
+                li{
+                    display: inline-block;
+                    position: relative;
+                    padding: 22px 10px 10px 45px;
+                    @include prefixer(transition, all .6s ease-in-out,webkit moz o );
+                    
+                    a{
+                        color: $greenColor;
+                        font-size: .9rem;
+                        font-weight: 700;
+                        &.active {
+                            color: $redColor;
+                        }
+
+                        &:hover{
+                            color: red;
+                            text-decoration: none;
+                        }
+
+                    }
+                    .second-menu{
+                        background-color: $greyColor;
+                        opacity: 0;           
+                        position: absolute;
+                        top:65px;
+                        left: 10px;
+                        text-align: left;
+                        @include prefixer(transition, all .6s ease-in-out,webkit moz o );
+
+                     ul{ 
+                        @include prefixer(transition, all .6s ease-in-out,webkit moz o );
+
+                         li{
+                             width: 100%;
+                            padding: 5px;
+                            cursor: pointer;
+
+                            a{
+                                color: $greenColor;
+                                font-size: 13px;
+                                &.active {
+                                    color: $redColor;
+                                }
+                              }
+                            &:hover a{
+                                color: #fff;
+                                text-decoration: none;
+                            }
+                            &:hover{
+                                background-color: red;
+                        }
+                    
+                    }   
+                
+                }
+            }
+                    &:hover  .second-menu {
+                        background-color: $greyColor;
+                        opacity: 1;
+                        margin-top: 10px;
+    
+                    }
+                    &.active a{
+                        color: $redColor;
+                    }
+
+                }
+             }
+        }
+        
+          .col-md-1{
+              padding: 0;
+
+           .navright-link{
+               margin-top: 37px;
+               margin-left: 25px;
+               
+               a{
+                   font-size: 14px;
+                   color: $greenColor;
+                   text-decoration: none ;
+                   @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+
+                   &:hover{
+                       color: $redColor;
+
+                   }
+               }
+            }
+        }
+               .the-toggler{
+                    border: none;
+                    padding: 5px;
+                    position: absolute;
+                    top:0;
+                    right: 0;
+                    cursor: pointer;
+                    display: none;
+                    outline: none;
+                    background-color: rgba(236,240,234,1);
+
+                    @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+
+
+                    .menu-icon{
+                        color:$greenColor;
+                        display: block;
+                        width: 40px;
+                        font-size: 40px;
+                        background-color: rgba(236,240,234,1);
+
+                    
+                    }
+                    .close{
+                        color:$redColor;
+                        width: 50px;
+                        height: 4px;
+                        font-weight: bold;
+                        display: none;
+                        font-size: 40px;
+
+                     }
+                }
+    
+            }
+
+    }
+
+        .arrow {
+            background-color:#eee;
+            color:$greenColor;
+            text-align: center;
+            position: absolute;
+            padding: 6px;
+            line-height: 50%;
+            right:48%;
+            bottom:30px;
+            border-radius:50%;
+            span{
+                font-size: 40px;
+                font-weight: lighter;
+            }
+
+
+            &:hover
+            {
+                padding: 10px;
+            
+                cursor: pointer;
+            }
+        }
+/* end scroll up */
+    
+/* End of Header in front page */
+
+/* start of Header all pages */
+
+
+    .full-nav{
+        position: fixed;
+        width:100%;
+        border:1px solid #fff;
+        background-color: #eee;
+        margin-top: -10px;    
+        background-color: $greyColor;
+        z-index:10; 
+        @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+        @include prefixer(box-shadow, 0 5px 6px rgba(0,0,0,.2) ,webkit moz o );
+         .full-navbar{
+             padding: 0;
+             margin-top: 10px;
+             .col-md-2{
+                 padding: 0;
+                .logo{
+                    height: 95px;
+                    position: relative;
+                        img{
+                            width: 80%;
+                        }
+                }
+
+             }
+            .col-md-9{
+                padding: 0;
+                .middle{
+                    text-align: center;
+                        ul{
+                                // margin: 0px;
+                                padding: 0px;
+                                list-style: none;
+
+                                li{
+                                        margin-top: 5px;
+                                            display: inline-block;
+                                            position: relative;
+                                            padding: 40px 35px 0px 30px;
+                                        
+                                        a{
+                                            color: $greenColor;
+                                            font-size: .9rem;
+                                            font-weight: bold;
+                                            &.active{
+                                                color: $redColor;
+                                        }
+
+
+                                        &:hover{
+                                            color: red;
+                                            text-decoration: none;
+                                        }
+
+                                    }
+
+                
+                                        .second-menu{
+                                            background-color: $greyColor;
+                                            opacity: 0;           
+                                            position: absolute;
+                                            top:65px;
+                                            left: 0;
+                                            text-align: left;
+                                            @include prefixer(transition, all .6s ease-in-out,webkit moz o );
+
+                                        ul{ 
+
+                                            box-shadow: 0 3px 5px rgba(0,0,0,.2);
+                                            padding: 5px 0;
+                                            li{
+                                                width: 100%;
+                                                padding: 0 10px;
+                                                margin-top: 0;
+
+                                                a{
+                                                        color: $greenColor;
+                                                        font-size: 13px;
+                                                &.active {
+                                                    color: $redColor;
+                                                }
+
+                                                
+                                                }
+                                                &:hover a{
+                                                    color: #fff;
+                                                    text-decoration: none;
+                                                }
+                                                &:hover{
+                                                    background-color: red;
+                                            }
+                                        
+                                            }   
+                                    
+                                        }
+                                    }
+                        &:hover  .second-menu {
+                            background-color: $greyColor;
+                            opacity: 1;
+                            margin-top: 10px;
+
+                        }
+                        &.active a{
+                            color: $redColor;
+                        }
+
+                    }
+                }
+                 }
+            }
+            
+            .col-md-1{
+                padding: 0;
+                .navright-link{
+                    margin:75px 0 0 25px;
+                    
+                        a{
+                            font-size: 14px;
+                            color: $greenColor;
+                            text-decoration: none ;
+                            @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+
+                            &:hover{
+                                color: $redColor;
+
+                            }
+                        }
+                    }
+
+            }
+           
+
+                
+            .the-toggler{
+                background-color: rgba(236,240,234,1);
+                    border: none;
+                    padding: 5px;
+                    position: absolute;
+                    bottom:20px;
+                    right: 10px;
+                    cursor: pointer;
+                    display: none;
+                    outline: none;
+                    @include prefixer(transition, all .5s ease-in-out,webkit moz o );
+
+
+                        .menu-icon{
+                            color:$greenColor;
+                            display: block;
+                            width: 40px;
+                            font-size: 40px;
+                            background-color: rgba(236,240,234,1);
+
+                        
+                        }
+                        .close{
+                            color:$redColor;
+                            width: 50px;
+                            height: 40px;
+                            font-weight: bold;
+                            display: none;
+                            font-size: 40px;
+
+                        }
+        
+
+
+                }
+      }
+}
+
+// side menu
+.side-menu{
+    position: fixed;
+    width:191px;
+    left:90px;
+    top:130px;
+    background-color: $greyColor;
+    z-index:5;
+   ul{
+       margin-bottom: 0;
+      li{
+          padding-left: 10px;
+          cursor: pointer;
+          line-height: 1.7;
+        a{
+          color: $greenColor;
+          font-weight: 700;
+          &.active{
+            color: $redColor;
+
+
+          }
+          &:hover{
+            color: $redColor;
+            text-decoration: none;
+          }
+        }
+
+      }
+    }
+  }
+  // End ofside menu
+  
+
+/* End of Header all pages */

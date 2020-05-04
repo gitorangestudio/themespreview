@@ -1,0 +1,91 @@
+#featured-section {
+    background: #f5f5f5;
+    padding-bottom: 120px;
+    padding-left: 45px;
+    #slider {
+        width: 55%;
+    }
+    .item {
+        p {
+            font-size: 36px;
+            margin-top: 0;
+            font-weight: 300;
+        }
+    }
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .owl-stage {
+        margin-top: 70px;
+    }
+    .owl-dots {
+        width: max-content;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 40px 0;
+        z-index: 999;
+    }
+    .owl-carousel {
+        button.owl-dot {
+            background: #41425a;
+            color: #41425a;
+            border: none;
+            padding: 0!important;
+            font: inherit;
+            border-radius: 100%;
+            margin: 3px;
+            width: 10px;
+            height: 10px;
+        }
+        button.owl-dot.active {
+            background: #7639bf;
+            transform: scale(1.2);
+        }
+    }
+    img {
+        width: 100%;
+        margin-top: -475px;
+    }
+    .text-section {
+        width: 55%;
+        margin-top: 35px;
+        margin-bottom: 50px;
+        p {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 0;
+            font-weight: 300;
+        }
+    }
+    .btn-info-custom {
+        padding: 20px 80px 20px 30px;
+        color: #FFF;
+        background-color: #30bfb8;
+        font-weight: 900;
+        width: 65%;
+        box-sizing: border-box;
+        font-size: 20px;
+        display: inline-block;
+        text-align: left;
+        line-height: 1;
+        background-position: right 30px center;
+        position: relative;
+        &::after {
+            content: "keyboard_arrow_right";
+            font-family: 'Material Icons';
+            font-weight: 100;
+            font-style: normal;
+            position: absolute;
+            right: 0px;
+            bottom: 0;
+            top: 0;
+            height: min-content;
+            font-size: 55px;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+body {
+    font-weight: 300;
+    color: #41425a;
+    letter-spacing: normal;
+    line-height: normal !important;
+    .bg-swr-el {
+        background-color: #7639bf;
+    }
+    .bg-swr-el-com {
+        background-color: #30bfb8;
+    }
+}
+
+button:focus {
+    outline: none;
+}
+
+.content-text {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.content-title {
+    font-size: 54px;
+    color: #7639bf;
+    padding: 40px 0;
+    font-weight: 100;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+.scroll-btn {
+    width: 50px;
+    cursor: pointer;
+}
+
+.scroll-btn:hover {
+    img:nth-child(1) {
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-top: -3px;
+        transition: all 0.2s, cubic-bezier(0.7, 0, 0.4, 1) ease-out;
+    }
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}

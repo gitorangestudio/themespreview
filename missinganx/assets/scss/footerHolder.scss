@@ -1,0 +1,44 @@
+#footerHolder {
+    background: #41425a;
+    border-bottom: 15px solid #e6459d;
+    padding: 70px 0;
+    .container-fluid {
+        width: 90%;
+        margin: auto;
+        .section-text {
+            width: 70%;
+            margin-right: auto;
+            p {
+                color: #FFF;
+                font-size: 15px;
+            }
+        }
+        .section-menu {
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        color: #FFF;
+                        font-size: 15px;
+                        padding: 0 15px 0 0px;
+                        margin-right: 15px;
+                        border-right: 1px solid #FFF;
+                        text-decoration: underline;
+                        &:focus,
+                        &:hover {
+                            color: #FFF;
+                        }
+                    }
+                    &:last-child {
+                        .nav-link {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+        }
+        .section-logo {
+            width: min-content;
+            margin-left: auto;
+        }
+    }
+}

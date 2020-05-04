@@ -1,0 +1,116 @@
+html{
+  scroll-behavior: smooth;
+}
+main.main_privacy{
+  .container{
+    width: 70%;
+    .notes{
+      text-align: right;
+      color: #7f7f7f;
+      margin: 20px 0px;
+      font-size: 12px;
+    }
+    .title{
+      color: #0093d0;
+    }
+    .lv_desc{
+      margin-bottom: 2rem;
+      .lv_logo{
+        width: 30px;
+        height: auto;
+      }
+      .lv_links{
+        display: inline-flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 70px;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 0px;
+        li{
+          font-weight: 600;
+          a{
+            text-decoration: none;
+          }
+        }
+        li.en{
+          color: #09c;
+          a{
+            position: relative;
+            &:after{
+              content: "";
+              width: 2px;
+              height: 64%;
+              position: absolute;
+              top: 4px;
+              left: 142%;
+              display: block;
+              background-color: #000;
+            }
+          }
+        }
+        li.lv{
+          color: #000;
+        }
+      }
+    }
+    .toc-items{
+      width: max-content;
+      color: #0093d0;
+      .toc-items__item{
+        width: max-content;
+        cursor: pointer;
+        a{
+          color: #0093d0;
+          text-decoration: none;
+        }
+      }
+    }
+    .items{
+      h2{
+        font-family: "Open Sans", sans-serif;
+        color: #0093d0;
+        font-size: 18px;
+        line-height: 23px;
+      }
+      p{
+        font-family: "Open Sans", sans-serif;
+        color: #000;
+        font-size: 12px;
+        line-height: 17.2px;
+        font-weight: 300;
+        word-spacing: 1px;
+      }
+      .item_plus{
+        position: relative;
+        left: 20px;
+        bottom: 7px;
+        font-size: 12px;
+        font-weight: normal;
+        color: #5b5b5b;
+        cursor: pointer;
+        &:before {
+          position: absolute;
+          content: "+";
+          top: -1px;
+          left: -15px;
+          font-size: 18px;
+          line-height: 0.9;
+        }
+      }
+      ul{
+        padding: 0 0 0 23px;
+        list-style-position: outside;
+        li {
+          font-size: 12px;
+          line-height: 17.2px;
+          font-weight: 400;
+          word-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+

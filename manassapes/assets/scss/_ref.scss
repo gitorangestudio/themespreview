@@ -1,0 +1,126 @@
+#ref{
+  .container {
+    //max-width: 100%;
+    //width: 80%;
+    //padding-right: 0px;
+    //padding-left: 0px;
+    //margin-right: auto;
+    //margin-left: auto;
+
+    h4 {
+      color: #212529;
+      font-size: 17px;
+      line-height: 4px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    hr {
+      width: 100%;
+      background: #a7a2a2;
+      margin: 4px 0px;
+    }
+
+    .open_ref {
+      border: none;
+      background-color: #0082ca;
+      width: 100px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      .title {
+        width: 70%;
+        height: 100%;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 500;
+        color: #ffffff;
+      }
+      .icon {
+        display: inline-block;
+        width: 8px;
+        position: absolute;
+        top: 50%;
+        left: 14%;
+        -webkit-transform: translate(-48%, -50%) rotate(90deg);
+        transform: translate(-48%, -50%) rotate(90deg);
+      }
+
+      .icon.open {
+        -webkit-transform: translate(-48%, -50%) rotate(-90deg);
+        transform: translate(-48%, -50%) rotate(-90deg);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30%;
+        height: 100%;
+        background-color: #de2c2b;
+        z-index: -1;
+        transition: width 0.5s ease-in-out;
+      }
+
+      :focus {
+        border: none;
+        outline: none;
+      }
+
+      &:hover {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+
+    .ref_content {
+      transform-origin: 50% 0;
+      -webkit-transform: scaleY(0);
+      transform: scaleY(0);
+      height: 0;
+      opacity: 0;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+
+      .ref_content_list {
+        margin: 1rem 0;
+        padding: 3px 27px;
+
+        li {
+          margin-bottom: 0.6rem;
+          margin-left: 1rem;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 200;
+          color: #212529;
+          word-wrap: break-word;
+
+          a {
+            &:hover {
+              text-decoration: none;
+              color: #245682;
+            }
+          }
+        }
+      }
+    }
+
+    .ref_content.open {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+      height: auto;
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+header {
+    background: #41425a;
+    height: 70px;
+    .navbar {
+        padding: 0;
+        width: 90%;
+        margin: 0 auto;
+        .dropdown {
+            margin-left: auto;
+            width: 520px;
+            .toggle-icon {
+                background-image: url(../images/hamburger-menu-removebg-preview.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 70px;
+                height: 70px;
+                float: right;
+                border-radius: 0;
+                border: none;
+            }
+            .dropdown-menu {
+                right: 0;
+                left: auto;
+                background: #41425a;
+                width: 100%;
+                border-radius: 0;
+                margin: 0;
+                border-top: 1px solid #7639bf;
+                padding: 10px 20px;
+                .dropdown-item {
+                    font-size: 28px;
+                    color: #FFF;
+                    padding: 18px 0;
+                    font-weight: 300;
+                    position: relative;
+                }
+                .dropdown-divider {
+                    border-top: 1px solid #7639bf;
+                    margin: 0;
+                }
+                .dropdown-item:hover,
+                .dropdown-item:focus {
+                    color: #FFF;
+                    text-decoration: none;
+                    background-color: unset;
+                }
+                .dropdown-item::after {
+                    content: "keyboard_arrow_right";
+                    font-family: 'Material Icons';
+                    font-weight: 900;
+                    font-style: normal;
+                    position: absolute;
+                    right: 15px;
+                    bottom: 0;
+                    top: 0;
+                    height: min-content;
+                    bottom: 0;
+                    font-size: 40px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

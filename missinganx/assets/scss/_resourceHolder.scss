@@ -1,0 +1,26 @@
+#resourceHolder {
+    padding: 70px 0;
+    margin-top: 20px;
+    .section-title {
+        font-size: 54px;
+        font-weight: 100;
+        width: 70%;
+        margin: 44px auto;
+    }
+    .btn-scroll-holder {
+        background: transparent;
+        text-align: center;
+        .btn-outline-info-custom {
+            font-weight: 900;
+            width: 520px;
+            font-size: 18px;
+            padding: 20px 70px;
+            border-color: #fff;
+            border: 4px solid #FFF;
+        }
+        .btn-outline-info:hover {
+            background-color: unset;
+            border-color: #FFF;
+        }
+    }
+}

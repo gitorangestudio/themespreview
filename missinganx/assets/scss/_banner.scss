@@ -1,0 +1,41 @@
+#banner {
+    margin-top: 70px;
+    padding: 0 0 50px 0;
+    .title {
+        width: 90%;
+        max-width: 1240px;
+        margin: auto;
+        display: flex;
+        h1 {
+            font-size: 54px;
+            color: #7639bf;
+            font-weight: 100;
+            margin: 40px 0;
+            .title-p1 {
+                font-weight: 100;
+                display: block;
+                font-size: 114px;
+                color: #FFF;
+                line-height: 118px;
+                margin-bottom: 10px;
+            }
+            .title-p2 {
+                font-weight: 700;
+                display: block;
+                font-size: 114px;
+                color: #FFF;
+                line-height: 118px;
+            }
+            .title-p3 {
+                font-weight: 700;
+                display: block;
+                font-size: 114px;
+                color: #FFF;
+                line-height: 118px;
+                .letter-x {
+                    opacity: .2;
+                }
+            }
+        }
+    }
+}

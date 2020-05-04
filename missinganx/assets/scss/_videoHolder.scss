@@ -1,0 +1,45 @@
+#videoHolder {
+    .btn {
+        outline: none;
+        box-shadow: none;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    iframe {
+        width: 800px;
+        height: 450px;
+        -webkit-box-shadow: 0 0 100px 30px #000000;
+        -moz-box-shadow: 0 0 100px 30px #000000;
+        box-shadow: 0 0 100px 30px #000000;
+        border: 0;
+    }
+    .modal {
+        .modal-content {
+            background-color: transparent;
+            border: none;
+            .modal-header {
+                border: none;
+                .btn-rounded {
+                    border: 2px solid #fff;
+                    border-radius: 100%;
+                    padding: 2px 2px 0px 2px;
+                    opacity: 1;
+                    margin: -1rem 0rem -1rem auto;
+                }
+            }
+            .modal-body {
+                width: min-content;
+                margin: 0 auto;
+            }
+        }
+    }
+    .text-content {
+        width: 90%;
+        margin: auto;
+        font-size: 34px;
+        padding-top: 20px;
+        letter-spacing: -1px;
+    }
+}
